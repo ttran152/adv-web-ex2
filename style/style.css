@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,600;1,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.container {
+  width: 89%;
+  margin: 0 auto;
+}
+body {
+  margin: 0;
+  font: 0.75rem "Open Sans", sans-serif;
+  color: #3f3f3f;
+}
+h1 {
+  font: 2rem "Cormorant", serif;
+  color: #0070bb;
+}
+h2 {
+  font: 1.5rem "Cormorant", serif;
+}
+h3 {
+  font: 600 1rem "Open Sans", sans-serif;
+}
+h4 {
+  font: 0.8rem "Open Sans", sans-serif;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: 800;
+}
+.blue {
+  font-family: "Open Sans", sans-serif;
+  color: #0070bb;
+}
+.button1,
+.button2 {
+  color: white;
+  padding: 0.5rem;
+  background-color: rgba (0, 0, 0, 0);
+  border: 1px solid white;
+  text-decoration: none;
+  font: 600 0.4rem "Open Sans", sans-serif;
+  text-align: center;
+}
+.button1:hover {
+  color: black;
+  background-color: white;
+}
+.button2 {
+  width: 33.33%;
+  color: #0070bb;
+  border: 1px solid #0070bb;
+  font: 700 0.6rem "Open Sans", sans-serif;
+}
+.button2:hover {
+  color: white;
+  background-color: #0070bb;
+}
+/* LOGO */
+header {
+  background: url(../image/bgHome-mobile.jpg) no-repeat;
+  background-size: cover;
+  color: white;
+  justify-content: center;
+}
+header img {
+  padding: 28.2% 0;
+}
+/* INFO */
+.info {
+  color: white;
+  font-size: 0.5rem;
+  display: block;
+  background-color: black;
+  text-align: right;
+  padding: 0.3rem;
+}
+/* NAVBAR */
+.navbar img {
+  margin: 0.5rem 0;
+  width: 30%;
+  height: 100%;
+}
+nav ul {
+  padding-left: 10rem;
+}
+nav ul li,
+.timeline ul li {
+  list-style: none;
+  color: #0070bb;
+  padding: 0.1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  font: 600 0.8rem "Open Sans", sans-serif;
+  color: #0070bb;
+}
+nav ul li a:hover{
+  color: #3f3f3f;
+}
+/* WELCOME */
+.welcome {
+  padding-top: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.welcome img {
+  width: 30%;
+}
+.welcome h1 {
+  text-align: center;
+}
+.welcome-text {
+  padding: 0 3rem;
+}
+/* ABOUT */
+.about {
+  background: url(../image/bgAbout-mobile.jpg) no-repeat;
+  background-size: cover;
+  color: white;
+  justify-content: center;
+}
+.about-text,
+.join-text {
+  width: 64%;
+  margin: 4rem;
+  padding: 0 2.5rem 2.5rem 2.5rem;
+  background: rgba(17, 17, 17, 0.85);
+  text-align: center;
+}
+/* SERVICES */
+.icons {
+  flex-direction: column;
+}
+.service {
+  margin: 2rem auto;
+}
+.service h1,
+h4 {
+  margin: 0;
+  text-align: center;
+}
+.service-text {
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.service-text img {
+  width: 8rem;
+  height: 100%;
+  padding-right: 1rem;
+}
+/* HISTORY */
+.history {
+  margin: 2rem;
+  padding: 0 3rem;
+}
+.timeline {
+  text-align: center;
+}
+.timeline ul {
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 6rem;
+}
+.timeline ul li a {
+  font: 600 1rem "Open Sans", sans-serif;
+  text-decoration: none;
+}
+.timeline ul li a:hover {
+  color: #3f3f3f;
+}
+.timeline-text {
+  align-items: center;
+}
+.timeline-text img {
+  width: 20%;
+  height: 100%;
+  padding-right: 1.5rem;
+}
+/* JOIN LIST */
+.join {
+  background: url(../image/joinlist-mobile.jpg) no-repeat;
+  background-size: cover;
+  color: white;
+  justify-content: center;
+}
+.join-text {
+  padding: 2.5rem;
+}
+/* CLIENT LIST */
+.client h1 {
+  padding: 2rem 0;
+}
+.client-category {
+  flex-direction: row;
+}
+.client-logo {
+  background-color: #e8f2f8;
+  justify-content: center;
+}
+.client-logo img {
+  width: auto;
+  height: 2rem;
+  margin: 10% 5%;
+}
+/* CONTACT */
+.contact {
+  padding: 2rem 3rem 4rem;
+  flex-direction: column;
+  align-items: center;
+}
+.contact a {
+  margin-top: 1rem;
+}
+/* HIDDEN */
+nav,
+.welcome,
+.hidden,
+.history {
+  display: none;
+}
+/* MEDIA QUERY */
+@media (min-width: 576px) /* for mobile */ {
+  .button1 {
+    font-size: 0.6rem;
+  }
+  .button2 {
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .client-logo img {
+    height: 4rem;
+  }
+}
+@media (min-width: 768px) /* for tablets */ {
+  nav,
+  .history {
+    display: block;
+  }
+  .hidden,
+  .welcome {
+    display: flex;
+  }
+  header {
+    background: url(../image/bgHome.jpg) no-repeat;
+  }
+  header img {
+    padding: 15% 0;
+  }
+  .service {
+    background-color: #e8f2f8;
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) /* for laptops */ {
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .info {
+    font-size: 1rem;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+  .button1,
+  .button2 {
+    font-size: 0.75rem;
+  }
+  .about-text,
+  .join-text {
+    width: 33%;
+    margin-left: 60%;
+    padding: 0 4rem 3rem 4rem;
+  }
+  .welcome {
+    flex-direction: row;
+    padding: 0;
+  }
+  .welcome img {
+    width: 40%;
+  }
+  .welcome h1 {
+    text-align: left;
+  }
+  .welcome-text {
+    padding: 0 1rem;
+  }
+  .join-text {
+    padding-bottom: 1rem;
+  }
+  .service {
+    flex-direction: row;
+  }
+  .service-text {
+    width: 23%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .service-text img {
+    height: 3rem;
+    width: 50%;
+  }
+  .icons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .history {
+    width: 80%;
+    margin: 4rem 6rem;
+    justify-content: center;
+  }
+  .timeline ul li a {
+    font-size: 1.25rem;
+  }
+  .button2 {
+    width: 26%;
+  }
+  .client-category {
+    justify-content: space-around;
+  }
+  .logo-align {
+    background-color: #e8f2f8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .client-logo img {
+    width: auto;
+    justify-content: space-between;
+    height: 4rem;
+  }
+  .contact {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact a {
+    margin: 1rem;
+  }
+}
+@media (min-width: 1200px) /* for large devices */ {
+  body {
+    font-size: 1.25rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  header img {
+    padding: 5rem 0;
+  }
+  .navbar {
+    align-items: flex-end;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+  .welcome {
+    padding-top: 3rem;
+  }
+  .service-text img {
+    height: 5rem;
+    width: 50%;
+  }
+  .join-text {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding: 2.5rem;
+  }
+  .button1,
+  .button2 {
+    font-size: 1.25rem;
+  }
+}
